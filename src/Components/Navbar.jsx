@@ -11,6 +11,20 @@ const Navbar = () => {
 		}
 	};
 
+	const handleResumeDownload = () => {
+		// Create a link element
+		const link = document.createElement("a");
+
+		// Set the link's href to the modified Google Drive link
+		link.href = "https://drive.google.com/uc?export=download&id=1dU3FBquw2PbIcsg6xPVfGMtMSY81Qhof";
+
+		// Set the 'download' attribute to specify the download filename
+		link.setAttribute("download", "Wakil_resume.pdf");
+
+		// Trigger a click event on the link to start the download
+		link.click();
+	};
+
 	const navLists = (
 		<>
 			<li className="font-semibold text-lg">
@@ -31,7 +45,10 @@ const Navbar = () => {
 			<li className="font-semibold text-lg">
 				<Link to="/blogs">Blogs</Link>
 			</li>
-			<button className="btn btn-outline btn-info">Resume</button>
+
+			<button className="btn btn-outline btn-info" onClick={handleResumeDownload}>
+				Resume
+			</button>
 		</>
 	);
 
