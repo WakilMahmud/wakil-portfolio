@@ -6,13 +6,13 @@ import Skills from "./Skills";
 
 const Home = () => {
 	return (
-		<div className="space-y-4">
+		<>
 			<Header></Header>
 			<About></About>
 			<Skills></Skills>
 			<Projects></Projects>
 			<Contact></Contact>
-		</div>
+		</>
 	);
 };
 

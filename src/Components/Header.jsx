@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
 	return (
-		<div className="flex flex-col lg:flex-row justify-between text-center">
+		<div className="flex flex-col lg:flex-row justify-between text-center my-8">
 			<div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
 				<div className="flex">
 					<h2 className="font-semibold">Hello everyone!</h2>
