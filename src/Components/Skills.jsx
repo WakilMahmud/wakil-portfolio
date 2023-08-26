@@ -28,7 +28,7 @@ const Skills = () => {
 	];
 
 	return (
-		<div id="skills" className="">
+		<div id="skills" className="my-32">
 			<h1 className="font-bold text-2xl lg:text-5xl text-center w-1/2 m-auto lg:mb-20">SKILLS</h1>
 			<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  gap-4 p-4 lg:p-0">
 				{cards.map((card) => (
