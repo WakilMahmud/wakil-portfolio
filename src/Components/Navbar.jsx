@@ -53,7 +53,7 @@ const Navbar = () => {
 	);
 
 	return (
-		<div className="navbar font-bold">
+		<div className="navbar font-bold sticky top-0 z-10 bg-white">
 			<div className="flex md:hidden ">
 				<div className="dropdown">
 					<label
