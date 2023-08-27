@@ -1,6 +1,6 @@
 import HTML from "../assets/HTML.png";
 import CSS from "../assets/CSS.png";
-import Bootstrap from "../assets/bootstrap.png";
+import Bootstrap from "../assets/Bootstrap.png";
 import Tailwind from "../assets/Tailwind.png";
 import JavaScript from "../assets/JavaScript.png";
 import React from "../assets/React.png";
@@ -29,11 +29,11 @@ const Skills = () => {
 
 	return (
 		<div id="skills" className="my-32">
-			<h1 className="font-bold text-2xl lg:text-5xl text-center w-1/2 m-auto lg:mb-20">SKILLS</h1>
+			<h1 className="font-bold text-2xl lg:text-5xl text-center w-1/2 m-auto lg:mb-20 text-yellow-300">SKILLS</h1>
 			<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  gap-4 p-4 lg:p-0">
 				{cards.map((card) => (
 					<div key={card.id} className="bg-transparent rounded-lg shadow-md p-4">
-						<img src={card.imageUrl} alt={card.name} className="w-full h-40 mx-auto rounded-lg" />
+						<img src={card.imageUrl} alt={card.name} className="w-full h-44 lg:h-40 mx-auto rounded-lg" />
 						<p className="text-center mt-2">{card.name}</p>
 					</div>
 				))}

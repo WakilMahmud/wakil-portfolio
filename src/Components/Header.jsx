@@ -16,7 +16,7 @@ const Header = () => {
 				</div>
 				<div>
 					<p className="">
-						This is <span className="font-bold text-4xl sky-500">WAKIL MAHMUD</span>
+						This is <span className="font-bold text-4xl text-yellow-300">WAKIL MAHMUD</span>
 					</p>
 					<TypeAnimation
 						sequence={[

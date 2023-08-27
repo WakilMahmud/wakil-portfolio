@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { HiOutlineDownload } from "react-icons/hi";
 const Navbar = () => {
 	const [click, setClick] = useState(false);
 
@@ -42,18 +42,18 @@ const Navbar = () => {
 			<li className="font-semibold text-lg">
 				<button onClick={() => scrollToSection("contact")}>Contact</button>
 			</li>
-			<li className="font-semibold text-lg">
+			{/* <li className="font-semibold text-lg">
 				<Link to="/blogs">Blogs</Link>
-			</li>
+			</li> */}
 
 			<button className="btn btn-outline btn-info" onClick={handleResumeDownload}>
-				Resume
+				<HiOutlineDownload></HiOutlineDownload>Resume
 			</button>
 		</>
 	);
 
 	return (
-		<div className="navbar font-bold sticky top-0 z-10">
+		<div className="navbar font-bold sticky top-0 z-10 bg-[#1D232A]">
 			<div className="flex md:hidden ">
 				<div className="dropdown">
 					<label
@@ -78,7 +78,7 @@ const Navbar = () => {
 
 			<div className="w-full flex lg:justify-between">
 				<div className="navbar-start w-auto flex items-center">
-					<Link to="/" className="btn btn-ghost normal-case text-2xl lg:text-4xl font-extrabold">
+					<Link to="/" className="btn btn-ghost normal-case text-2xl text-sky-500 lg:text-4xl font-extrabold">
 						Wakil
 					</Link>
 				</div>

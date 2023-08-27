@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
 import logo from "../assets/react.svg";
+import { FaFacebook, FaLinkedin, FaSquareWhatsapp, FaTelegram } from "react-icons/fa6";
 
 const Footer = () => {
 	return (
@@ -10,7 +10,7 @@ const Footer = () => {
 					<Link to="/">
 						<img className="h-12 w-12 rounded-full" src={logo} alt="Logo" />
 					</Link>
-					<h2 className="text-xl font-bold">Wakil</h2>
+					<h2 className="text-xl font-bold text-sky-500">Wakil</h2>
 				</div>
 				<div className="contact-info  space-y-2 lg:mt-16 text-center">
 					<p>Email: wakilmahmud30@gmail.com</p>
@@ -20,11 +20,18 @@ const Footer = () => {
 
 				<div className="social-media flex items-center justify-center my-8 lg:mt-0">
 					<span className="footer-title mb-0 ">Social</span>
-					<Link to="https://www.facebook.com/wakil.mahmud.5" className=" hover:text-blue-500 mx-2">
+					<Link to="https://www.facebook.com/wakil.mahmud.5" className=" hover:text-sky-500 mx-2">
 						<FaFacebook></FaFacebook>
 					</Link>
-					<Link to="https://www.instagram.com" className=" hover:text-purple-500 mx-2">
-						<FaTwitter></FaTwitter>
+
+					<Link to="https://www.linkedin.com/in/wakil-mahmud-971a7924a/" className=" hover:text-sky-500 mx-2">
+						<FaLinkedin></FaLinkedin>
+					</Link>
+					<Link to="https://wa.me/1725048190" className=" hover:text-sky-500 mx-2">
+						<FaSquareWhatsapp></FaSquareWhatsapp>
+					</Link>
+					<Link to="https://t.me/Wakil_Mahmud" className=" hover:text-sky-500 mx-2">
+						<FaTelegram></FaTelegram>
 					</Link>
 				</div>
 			</div>

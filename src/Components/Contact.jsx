@@ -23,9 +23,9 @@ export const Contact = () => {
 
 	return (
 		<div id="contact" className="my-32">
-			<h1 className="font-bold text-2xl lg:text-5xl text-center w-1/2 m-auto lg:mb-20">CONTACT</h1>
+			<h1 className="font-bold text-2xl lg:text-5xl text-center w-1/2 m-auto mb-10 lg:mb-20 text-yellow-300">CONTACT</h1>
 			<div className="flex flex-col lg:flex-row justify-between px-4 lg:px-0">
-				<div className="w-full lg:w-1/2 mb-20 lg:mb-0">
+				<div className="w-full lg:w-1/2 mb-20 lg:mb-0 border p-10 rounded-md">
 					<form ref={form} onSubmit={sendEmail}>
 						<div>
 							<label htmlFor="name" className="block text-gray-700 font-bold mb-2">
@@ -67,7 +67,7 @@ export const Contact = () => {
 							></textarea>
 						</div>
 						<div className="text-center">
-							<button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none">
+							<button type="submit" className="bg-sky-600 text-white py-2 px-4 rounded-lg hover:bg-sky-500 focus:outline-none">
 								Submit
 							</button>
 						</div>
@@ -86,16 +86,16 @@ export const Contact = () => {
 						<HiPhone></HiPhone> +880 17250 48190, +880 17010 64692
 					</div>
 					<div className="flex gap-4">
-						<Link to="https://www.facebook.com/wakil.mahmud.5">
+						<Link to="https://www.facebook.com/wakil.mahmud.5" className="hover:text-sky-500">
 							<FaFacebook></FaFacebook>
 						</Link>
-						<Link to="https://www.linkedin.com/in/wakil-mahmud-971a7924a/">
+						<Link to="https://www.linkedin.com/in/wakil-mahmud-971a7924a/" className="hover:text-sky-500">
 							<FaLinkedin></FaLinkedin>
 						</Link>
-						<Link to="https://wa.me/1725048190">
+						<Link to="https://wa.me/1725048190" className="hover:text-sky-500">
 							<FaSquareWhatsapp></FaSquareWhatsapp>
 						</Link>
-						<Link to="https://t.me/Wakil_Mahmud">
+						<Link to="https://t.me/Wakil_Mahmud" className="hover:text-sky-500">
 							<FaTelegram></FaTelegram>
 						</Link>
 					</div>
